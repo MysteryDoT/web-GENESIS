@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learnify — вивчай математику легко</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root{
+      --primary:#4F46E5;
+      --secondary:#22C55E;
+      --bg:#F8FAFC;
+      --text:#0F172A;
+      --muted:#64748B;
+      --card:#FFFFFF;
+      --warning:#F59E0B;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#F8FAFC,#EEF2FF);
+    }
+    header{
+      background:linear-gradient(135deg, var(--primary), #6366F1);
+      color:white;
+      padding:0 24px 72px;
+      position:relative;
+      overflow:hidden;
+    }
+    .dev-banner{
+      background:rgba(0,0,0,.25);
+      color:#FFF7ED;
+      text-align:center;
+      padding:10px 16px;
+      font-size:14px;
+      backdrop-filter: blur(6px);
+    }
+    .container{max-width:1100px;margin:0 auto}
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:32px;
+      align-items:center;
+      margin-top:48px;
+    }
+    h1{font-size:42px;line-height:1.1;margin:0 0 16px}
+    p.lead{font-size:18px;opacity:.95}
+    .cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      background:white;color:var(--primary);border:none;
+      padding:14px 22px;border-radius:14px;font-weight:700;cursor:pointer;
+      box-shadow:0 10px 20px rgba(0,0,0,.15)
+    }
+    .btn.secondary{background:transparent;color:white;border:1px solid rgba(255,255,255,.5)}
+    section{padding:80px 24px}
+    h2{font-size:32px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:24px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .card{
+      background:var(--card);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 15px 35px rgba(15,23,42,.08);
+      transition:transform .2s ease, box-shadow .2s ease
+    }
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 20px 45px rgba(15,23,42,.12)
+    }
+    .card.highlight{
+      border:2px solid var(--secondary);
+      background:linear-gradient(180deg,#000000,#5900bf)
+    }
+    ul{padding-left:18px}
+    footer{
+      background:#020617;color:#CBD5F5;padding:48px 24px
+    }
+    footer strong{font-size:20px}
+    @media (max-width:900px){
+      .hero,.grid-3,.grid-2{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="dev-banner">🚧 Сайт у стані розробки. Деякі функції можуть бути недоступні.</div>
+  <div class="container hero">
+    <div>
+      <h1>Learnify — математика, яка захоплює</h1>
+      <p class="lead">Ґейміфікований застосунок та вебплатформа для вивчення математики: від алгебри до фінансової грамотності.</p>
+      <div class="cta">
+        <button class="btn">Почати безкоштовно</button>
+        <button class="btn secondary">Для батьків</button>
+      </div>
+    </div>
+    <div class="card highlight">
+      <strong>Що всередині:</strong>
+      <ul>
+        <li>Адаптивні вправи за рівнем</li>
+        <li>3-хвилинні відеолекції</li>
+        <li>Персонажі та челенджі</li>
+        <li>1-1 сесії з викладачами (веб)</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Основні функції</h2>
+    <p class="muted">Все необхідне для системного та цікавого навчання</p>
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card">
+        <h3>Вправи та теорія</h3>
+        <p>Алгебра, геометрія, вища математика, логіка, задачі з життя та за професіями.</p>
+      </div>
+      <div class="card">
+        <h3>Відеолекції</h3>
+        <p>Короткі 3‑хвилинні пояснення складних тем простою мовою.</p>
+      </div>
+      <div class="card">
+        <h3>Ґейміфікація</h3>
+        <p>Персонаж росте разом із прогресом користувача та мотивує повертатися.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#EEF2FF">
+  <div class="container">
+    <h2>Для кого Learnify</h2>
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card">
+        <h3>Школярі та студенти</h3>
+        <p>Потрібно підтягнути математику та не втратити мотивацію.</p>
+      </div>
+      <div class="card">
+        <h3>Батьки</h3>
+        <p>Хочуть бачити прогрес дитини та отримувати щотижневі звіти.</p>
+      </div>
+      <div class="card">
+        <h3>Викладачі</h3>
+        <p>Проводять челенджі, 1‑1 сесії та діляться матеріалами в блозі.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Монетизація</h2>
+    <div class="grid grid-2" style="margin-top:24px">
+      <div class="card">
+        <h3>Застосунок (Freemium)</h3>
+        <ul>
+          <li>Безкоштовно: базові теми, до 10 вправ/день, персонаж, челенджі</li>
+          <li>Преміум: необмежені вправи, всі теми, фінансова грамотність, відеолекції</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Вебсайт</h3>
+        <ul>
+          <li>Комісія 30% з 1‑1 сесій з викладачами</li>
+          <li>Освітня реклама</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#ECFEFF">
+  <div class="container">
+    <h2>Чому Learnify</h2>
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card"><strong>Унікальна цінність</strong><p>Поєднання адаптивного навчання, гри та живих викладачів.</p></div>
+      <div class="card"><strong>Рішення проблем</strong><p>Знімає страх перед математикою та повертає мотивацію.</p></div>
+      <div class="card"><strong>Прихована перевага</strong><p>Глибока персоналізація та поведінкова мотивація.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <strong>Learnify</strong>
+    <p class="muted">Освітня платформа нового покоління</p>
+  </div>
+</footer>
+<div id="start" class="modal">
+  <div class="modal-content dark-text">
+    <h3>Почати безкоштовно</h3>
+    <p class="muted">Сайт у розробці. Залиш email для раннього доступу.</p>
+
+    <form method="POST">
+      <input type="email" name="email" placeholder="Ваш email" required>
+      <button class="btn">Надіслати</button>
+    </form>
+
+    <a href="#" class="close">Закрити</a>
+  </div>
+</div>
+
+</body>
+</html>
